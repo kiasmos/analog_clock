@@ -22,11 +22,11 @@ function displayTime() {
   //   console.log(hour);
   //   console.log(minute);
 
-  let hourDeg = hour * 30 + 0.5 * minute; 
+  let hourDeg = hour * 30 + 0.5 * minute;
   //saat 3dusə, dəqiqə oxu tam olaraq 90 dərəcə, saat oxu isə 15 dərəcə (0,5 * 30 dərəcə) irəli sürüşür.
-  let minuteDeg = minute * 6 + 0.1 * second; 
+  let minuteDeg = minute * 6 + 0.1 * second;
   //dəqiqə 20disə, saniyə oxu tam olaraq 120 dərəcə yerləşir, dəqiqə oxu isə 2 dərəcə (0,1 * 6 dərəcə) irəli sürüşür.
-  let secondDeg = second * 6; 
+  let secondDeg = second * 6;
   //saniye 15drse, 15 vur 6 olmalidi
 
   hourArrow.style.transform = "rotate(" + hourDeg + "deg)";
